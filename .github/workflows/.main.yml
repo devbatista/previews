@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # Mesmo login FTP do devbatista_site: os previews ficam em
         # devbatista.com/previews/, como era antes da separação do repositório.
-        server-dir: previews/
+        server-dir: /
         # Ao declarar exclude, os padrões default são substituídos —
         # por isso os de git precisam ser repetidos aqui.
         exclude: |
