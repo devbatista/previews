@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Águas Cristalinas Sistema</title>
+<meta name="robots" content="noindex, nofollow">
+<script>
+  // Aplica o tema salvo antes de pintar a página (evita piscar o tema errado).
+  try { var t = localStorage.getItem("ac-tema"); if (t === "claro") document.documentElement.dataset.theme = "light"; else if (t === "escuro") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="demo-band">Prévia do sistema · dados de exemplo · DevBatista</div>
+
+<header class="mobile-head">
+  <span class="logo-box sm"><img src="assets/logo.jpg" alt="Águas Cristalinas" width="600" height="400"></span>
+  <div class="brand-sub">Eduardo · Belo Horizonte</div>
+  <div class="theme-switch compact" data-tema-grupo role="group" aria-label="Tema"></div>
+</header>
+
+<div class="app">
+  <aside class="side">
+    <span class="logo-box"><img src="assets/logo.jpg" alt="Águas Cristalinas" width="600" height="400"></span>
+    <nav class="nav" id="nav-side" aria-label="Menu"></nav>
+    <div class="side-foot"><span class="theme-label">Tema</span><div class="theme-switch" data-tema-grupo role="group" aria-label="Tema"></div>Eduardo · acesso pelo navegador<br>Desenvolvido por DevBatista</div>
+  </aside>
+
+  <main id="main" tabindex="-1"></main>
+</div>
+
+<nav class="tabbar" id="nav-tab" aria-label="Menu"></nav>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
